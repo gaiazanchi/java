@@ -15,6 +15,8 @@ public class Start {
         Audi.isCabrio = true;
         Audi.wheelsNumber = 4;
 
+        System.out.println(Garage.maxCarNumber);
+
         System.out.println(Mini.print());
         System.out.println(Audi.print());
 
@@ -25,6 +27,16 @@ public class Start {
 
         Audi.model = "A6";
         //System.out.println("Audi" + " - " + Audi.color + " - " + Audi.model + " - " + Audi.isCabrio + " - " + Audi.wheelsNumber);
+
+        CarStatic fiat = new CarStatic();
+        CarStatic.power = 56;
+
+        CarStatic toyota = new CarStatic();
+        CarStatic.power = 67; //posso riassegnarlo
+
+        Garage.maxCarNumber = 667;
+
+        System.out.println(Garage.maxCarNumber);
 
     }
 }
